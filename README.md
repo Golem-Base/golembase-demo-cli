@@ -65,7 +65,9 @@ Golem Base operations (like creating or updating data) require a small amount of
 
 ## Quickstart
 
-Here's a quick 3-step guide to get started using the `golembase-demo-cli`:
+This guide demonstrates the basic workflow: creating an account, storing data (an entity), and retrieving it using the `golembase-demo-cli`.
+
+Here's a quick 3-step guide:
 
 1.  **Create a new account:**
 
