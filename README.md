@@ -59,7 +59,7 @@ The configuration directory stores:
 Golem Base operations (like creating or updating data) require a small amount of ETH to pay for transaction gas fees on the network.
 <img width="1511" alt="image" src="https://github.com/user-attachments/assets/7618ff9a-d4f2-4724-9cee-ff0056f9ebab" />
 
--   **Faucet:** Obtain test ETH for the Golem Base Demo network by visiting the official faucet at `https://faucet.golembase.demo.golem-base.io/`.
+-   **Faucet:** Obtain test ETH for the Golem Base Demo network by visiting the [official demo faucet](https://faucet.golembase.demo.golem-base.io/).
 -   **Process:** You will need your Golem Base account address (which you can get from `account create` or `account import`). Paste this address into the faucet interface to receive test ETH.
 -   **Verify:** After using the faucet, check your balance using `golembase-demo-cli account balance`.
 
