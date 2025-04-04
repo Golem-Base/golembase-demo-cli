@@ -8,13 +8,13 @@ The Golem Base CLI is a command-line interface written in Go for interacting wit
 -   [Installation](#installation)
 -   [Configuration](#configuration)
 -   [Funding Your Account](#funding-your-account)
+-   [Quickstart](#quickstart)
+    -   [Detailed Use Cases](./use-cases/)
 -   [Available Commands](#available-commands)
     -   [Account Management](#account-management)
     -   [Entity Management](#entity-management)
     -   [Query Operations](#query-operations)
     -   [Entity Content Display](#entity-content-display)
--   [Usage Examples](#usage-examples)
-    -   [Detailed Use Cases](./use-cases/)
 -   [Development](#development)
 
 ## Requirements
@@ -62,6 +62,38 @@ Golem Base operations (like creating or updating data) require a small amount of
 -   **Faucet:** Obtain test ETH for the Golem Base Demo network by visiting the [official demo faucet](https://faucet.golembase.demo.golem-base.io/).
 -   **Process:** You will need your Golem Base account address (which you can get from `account create` or `account import`). Paste this address into the faucet interface to receive test ETH.
 -   **Verify:** After using the faucet, check your balance using `golembase-demo-cli account balance`.
+
+## Quickstart
+
+Here's a quick 3-step guide to get started using the `golembase-demo-cli`:
+
+1.  **Create a new account:**
+
+    ```bash
+    golembase-demo-cli account create
+    ```
+
+    _(Remember to fund this account using the faucet mentioned in the [Funding Your Account](#funding-your-account) section)._
+
+2.  **Create a new entity:**
+
+    ```bash
+    golembase-demo-cli entity create --data "custom data" --ttl 200
+    ```
+
+    _(This command will output an `entity-key` upon success)._
+
+3.  **Display entity payload:**
+    ```bash
+    golembase-demo-cli cat <entity-key>
+    ```
+    _(Replace `<entity-key>` with the key obtained from the previous step)._
+
+---
+
+The `golembase-demo-cli` simplifies the underlying JSON-RPC interactions for easy experimentation. For more detailed examples illustrating how real-world applications might integrate with Golem Base directly via its RPC interface or through software libraries, please refer to our dedicated use case documents:
+
+-   [See Detailed Use Cases](./use-cases/)
 
 ## Available Commands
 
@@ -144,37 +176,6 @@ In Golem Base, an "entity" is simply a piece of data (payload) stored on the net
     ```
     -   Takes an `<entity-key>` argument.
 
-## Usage Examples
-
-Here's a quick 3-step guide to get started using the `golembase-demo-cli`:
-
-1.  **Create a new account:**
-
-    ```bash
-    golembase-demo-cli account create
-    ```
-
-    _(Remember to fund this account using the faucet mentioned in the [Funding Your Account](#funding-your-account) section)._
-
-2.  **Create a new entity:**
-
-    ```bash
-    golembase-demo-cli entity create --data "custom data" --ttl 200
-    ```
-
-    _(This command will output an `entity-key` upon success)._
-
-3.  **Display entity payload:**
-    ```bash
-    golembase-demo-cli cat <entity-key>
-    ```
-    _(Replace `<entity-key>` with the key obtained from the previous step)._
-
----
-
-The `golembase-demo-cli` simplifies the underlying JSON-RPC interactions for easy experimentation. For more detailed examples illustrating how real-world applications might integrate with Golem Base directly via its RPC interface or through software libraries, please refer to our dedicated use case documents:
-
--   [See Detailed Use Cases](./use-cases/)
 
 ## Development
 
