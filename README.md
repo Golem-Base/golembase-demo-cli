@@ -12,7 +12,7 @@ The Golem Base CLI is a command-line interface written in Go for interacting wit
 ### Using Homebrew (macOS)
 
 ```bash
-brew install Golem-Base/demo/golembase_demo_cli
+brew install Golem-Base/demo/golembase-demo-cli
 ```
 
 ### Using Linux Binaries
