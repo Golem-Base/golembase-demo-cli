@@ -7,6 +7,24 @@ The Golem Base CLI is a command-line interface written in Go for interacting wit
 - Go 1.23.5 or later
 - A running Golem Base node (default: https://api.golembase.demo.golem-base.io/)
 
+## Installation
+
+### Using Homebrew (macOS)
+
+```bash
+brew install Golem-Base/demo/golembase_demo_cli
+```
+
+### Using Linux Binaries
+
+Download the appropriate binary for your system from the [GitHub releases page](https://github.com/Golem-Base/golembase-demo-cli/releases/tag/v0.0.2).
+
+### Using Go Install
+
+```bash
+go install github.com/Golem-Base/golembase-demo-cli@latest
+```
+
 ## Configuration
 
 The CLI follows the XDG Base Directory Specification for storing configuration files:
