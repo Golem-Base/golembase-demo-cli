@@ -66,7 +66,7 @@ The configuration directory stores:
   - Execute custom queries using the Golem Base query language
   - Search entities by annotations
   - Retrieve entity metadata
-  - For detailed query syntax and examples, see the [Query Language Support section](../../golem-base/README.md#query-language-support)
+  - For detailed query syntax and examples, see the [Query Language Support section](https://github.com/Golem-Base/golembase-op-geth/blob/main/golem-base/README.md#api-functionality)
 
 ### Entity Content Display
 
