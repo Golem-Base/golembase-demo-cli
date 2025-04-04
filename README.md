@@ -17,7 +17,7 @@ brew install Golem-Base/demo/golembase-demo-cli
 
 ### Using Linux Binaries
 
-Download the appropriate binary for your system from the [GitHub releases page](https://github.com/Golem-Base/golembase-demo-cli/releases/tag/v0.0.2).
+Download the appropriate binary for your system from the [GitHub releases page](https://github.com/Golem-Base/golembase-demo-cli/releases/).
 
 ### Using Go Install
 

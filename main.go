@@ -4,10 +4,10 @@ import (
 	"log"
 	"os"
 
-	"github.com/Golem-Base/golembase-demo/account"
-	"github.com/Golem-Base/golembase-demo/cat"
-	"github.com/Golem-Base/golembase-demo/entity"
-	"github.com/Golem-Base/golembase-demo/query"
+	"github.com/Golem-Base/golembase-demo-cli/account"
+	"github.com/Golem-Base/golembase-demo-cli/cat"
+	"github.com/Golem-Base/golembase-demo-cli/entity"
+	"github.com/Golem-Base/golembase-demo-cli/query"
 	"github.com/urfave/cli/v2"
 )
 

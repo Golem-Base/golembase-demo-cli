@@ -1,9 +1,9 @@
 package account
 
 import (
-	"github.com/Golem-Base/golembase-demo/account/balance"
-	"github.com/Golem-Base/golembase-demo/account/create"
-	"github.com/Golem-Base/golembase-demo/account/importkey"
+	"github.com/Golem-Base/golembase-demo-cli/account/balance"
+	"github.com/Golem-Base/golembase-demo-cli/account/create"
+	"github.com/Golem-Base/golembase-demo-cli/account/importkey"
 	"github.com/urfave/cli/v2"
 )
 

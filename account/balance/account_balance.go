@@ -6,8 +6,8 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/Golem-Base/golembase-demo/account/pkg/useraccount"
-	"github.com/Golem-Base/golembase-demo/pkg/defaults"
+	"github.com/Golem-Base/golembase-demo-cli/account/pkg/useraccount"
+	"github.com/Golem-Base/golembase-demo-cli/pkg/defaults"
 	"github.com/dustin/go-humanize"
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/ethereum/go-ethereum/params"

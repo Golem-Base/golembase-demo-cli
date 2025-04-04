@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/Golem-Base/golembase-demo/pkg/defaults"
+	"github.com/Golem-Base/golembase-demo-cli/pkg/defaults"
 	"github.com/ethereum/go-ethereum/rpc"
 	"github.com/urfave/cli/v2"
 )

@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/Golem-Base/golembase-demo/account/pkg/useraccount"
+	"github.com/Golem-Base/golembase-demo-cli/account/pkg/useraccount"
 	"github.com/adrg/xdg"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/urfave/cli/v2"

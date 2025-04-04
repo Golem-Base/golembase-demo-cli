@@ -1,9 +1,9 @@
 package entity
 
 import (
-	"github.com/Golem-Base/golembase-demo/entity/create"
-	"github.com/Golem-Base/golembase-demo/entity/delete"
-	"github.com/Golem-Base/golembase-demo/entity/update"
+	"github.com/Golem-Base/golembase-demo-cli/entity/create"
+	"github.com/Golem-Base/golembase-demo-cli/entity/delete"
+	"github.com/Golem-Base/golembase-demo-cli/entity/update"
 	"github.com/urfave/cli/v2"
 )
 

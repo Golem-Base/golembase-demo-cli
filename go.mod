@@ -1,4 +1,4 @@
-module github.com/Golem-Base/golembase-demo
+module github.com/Golem-Base/golembase-demo-cli
 
 go 1.23.5
 
