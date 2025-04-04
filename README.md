@@ -61,17 +61,17 @@ The configuration directory stores:
 
 1. Create a new account:
 ```bash
-golembase account create
+golembase-demo-cli account create
 ```
 
 2. Create a new entity:
 ```bash
-golembase entity create --data "custom data" --ttl 200
+golembase-demo-cli entity create --data "custom data" --ttl 200
 ```
 
 3. Display entity payload:
 ```bash
-golembase cat <entity-key>
+golembase-demo-cli cat <entity-key>
 ```
 
 ## Development
@@ -86,5 +86,3 @@ To build the project:
 ```bash
 go build
 ```
-
-For more detailed information about the Golem Base system, refer to the main [README.md](../../golem-base/README.md). 
