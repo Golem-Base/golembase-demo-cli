@@ -62,6 +62,14 @@ func (obj *StorageTransaction) EncodeRLP(_w io.Writer) error {
 		w.WriteBytes(_tmp20[:])
 	}
 	w.ListEnd(_tmp19)
+	_tmp21 := w.List()
+	for _, _tmp22 := range obj.Extend {
+		_tmp23 := w.List()
+		w.WriteBytes(_tmp22.EntityKey[:])
+		w.WriteUint64(_tmp22.NumberOfBlocks)
+		w.ListEnd(_tmp23)
+	}
+	w.ListEnd(_tmp21)
 	w.ListEnd(_tmp0)
 	return w.Flush()
 }

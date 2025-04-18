@@ -16,6 +16,9 @@ var GolemBaseStorageEntityDeleted = crypto.Keccak256Hash([]byte("GolemBaseStorag
 // GolemBaseStorageEntityUpdated is the event signature for entity update logs.
 var GolemBaseStorageEntityUpdated = crypto.Keccak256Hash([]byte("GolemBaseStorageEntityUpdated(uint256,uint256)"))
 
+// GolemBaseStorageEntityTTLExtended is the event signature for entity TTL extension logs.
+var GolemBaseStorageEntityTTLExtended = crypto.Keccak256Hash([]byte("GolemBaseStorageEntityTTLExtended(bytes32,uint256,uint256)"))
+
 // StorageTransaction represents a transaction that can be applied to the storage layer.
 // It contains a list of Create operations, a list of Update operations and a list of Delete operations.
 //
@@ -23,6 +26,7 @@ var GolemBaseStorageEntityUpdated = crypto.Keccak256Hash([]byte("GolemBaseStorag
 //   - Create: adds new entities to the storage layer. Each entity has a TTL (number of blocks), a payload and a list of annotations. The Key of the entity is derived from the payload content, the transaction hash where the entity was created and the index of the create operation in the transaction.
 //   - Update: updates existing entities. Each entity has a key, a TTL (number of blocks), a payload and a list of annotations. If the entity does not exist, the operation fails, failing the whole transaction.
 //   - Delete: removes entities from the storage layer. If the entity does not exist, the operation fails, failing back the whole transaction.
+//   - Extend: extends the TTL of existing entities. Each operation specifies an entity key and the number of blocks to extend its TTL by. If the entity does not exist, the operation fails, failing the whole transaction.
 //
 // The transaction is atomic, meaning that all operations are applied or none are.
 //
@@ -33,6 +37,7 @@ type StorageTransaction struct {
 	Create []Create      `json:"create"`
 	Update []Update      `json:"update"`
 	Delete []common.Hash `json:"delete"`
+	Extend []ExtendTTL   `json:"extend"`
 }
 
 type Create struct {
@@ -48,6 +53,11 @@ type Update struct {
 	Payload            []byte              `json:"payload"`
 	StringAnnotations  []StringAnnotation  `json:"stringAnnotations"`
 	NumericAnnotations []NumericAnnotation `json:"numericAnnotations"`
+}
+
+type ExtendTTL struct {
+	EntityKey      common.Hash `json:"entityKey"`
+	NumberOfBlocks uint64      `json:"numberOfBlocks"`
 }
 
 type StringAnnotation struct {
